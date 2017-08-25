@@ -1,0 +1,43 @@
+<div class='tweetbox'>
+    <div class= 'tweetelement'>
+        <p class='twitteruser'>User: <%=@tweet.user_name%></p>
+        <p class='twitteruser'><%=@tweet.created_at%></p>
+        <p class='tweetstatus'>Tweet:<%=@tweet.status%></p>
+        <div class='reactionbox'>
+            <ul>
+                <%@emojis.each do |emoji|%>
+                    <%if @tweet.emojitweets.include?(@tweet.emojitweets.find_by_emoji_id(emoji.id))%>
+                    <li class='emoji'>
+                        <%=emoji.face%>
+                        <p><%=@tweet.emojitweets.where({emoji_id: emoji.id}).length%></p>
+                        <%if @tweet.emojitweets.include?(@tweet.emojitweets.find_by_user_id(current_user.id))%>
+                            <p><%=button_to emoji.face, tweet_user_emojitweet_path(@tweet, current_user, @emojitweets.find_by_tweet_id_and_emoji_id_and_user_id(@tweet.id, emoji.id, current_user.id)), method: :delete%></p>
+                        <%end%>
+                    </li>
+                    <%end%>
+                <%end%>
+            </ul>
+        </div>
+        <div class='emojibox'>
+            <h4>Add yours!</h4>
+            <ul class='term-list'>
+                <%@emojis.each do |emoji|%>
+                <li class='emoji term-item'>
+                    <%=button_to emoji.face,{:controller => "emojitweets", :action => "create", :tweet_id => @tweet.id, :emoji_id=>emoji.id, :user_id => current_user}%>
+                </li>
+                <%end%>
+            </ul>
+            <p><%=@tweet.emojitweets.length%> Emojis</p>
+            <p class='twitteruser commentslink'><%=link_to 'Comments', tweet_comments_path(@tweet), class:'commentslink'%></p>
+        </div>
+    </div>
+</div>
+<h1 class='headline'>Comments</h1>
+<div class="commentbox">
+    <% @tweet.comments.each do |comment| %>
+    <p class='comment_user'><%=comment.user.email%>
+    <p class='comment'><%= comment.post %></p>
+    <p><%= link_to 'Edit', edit_tweet_comment_path(@tweet, comment) %>,<%= link_to 'Destroy', tweet_comment_path(@tweet, comment), method: :delete%></p>
+    <% end %>
+</div>
+<p class='headline'><%= link_to 'New Comment', new_tweet_comment_path %></p>

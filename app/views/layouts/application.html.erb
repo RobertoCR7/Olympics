@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olympics</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    '/assets/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag '/assets/application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+    <% if user_signed_in? %>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class='brand-img' alt="Brand" src="http://images.sports.cn/olympic/cn/images/200710/logo_ioc.gif">
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><%=link_to "Live Feed", root_path%></li>
+                        <li><%=link_to "Top Tweets", emojitweets_path%><li>
+                        <li><%=link_to "Current News", 'https://www.olympic.org/news'%><li>
+                        <li><%=link_to "Account", root_path%><li>
+                        <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <%end%>
+        <% flash.each do |type, message|%>
+        <div class="commentbox">
+            <p class="<%= type%>"><%=message%></p>
+        </div>
+        <%end%>
+        <%= yield %>
+    </body>
+</html>

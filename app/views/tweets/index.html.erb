@@ -1,0 +1,37 @@
+<h1 class='headline'>Live Feed</h1>
+<div class='tweetbox'>
+<% @tweets.each do |tweet| %>
+    <div class= 'tweetelement'>
+        <p class='twitteruser'>User: <%=tweet.user_name%></p>
+        <p class='twitteruser'><%=tweet.created_at%></p>
+        <p class='tweetstatus'>Tweet:<%=tweet.status%></p>
+        <div class='reactionbox'>
+            <ul>
+                <%@emojis.each do |emoji|%>
+                    <%if tweet.emojitweets.include?(tweet.emojitweets.find_by_emoji_id(emoji.id))%>
+                    <li class='emoji'>
+                        <%=emoji.face%>
+                        <p class='emoji_number'><%=tweet.emojitweets.where({emoji_id: emoji.id}).length%></p>
+                        <%if tweet.emojitweets.include?(tweet.emojitweets.find_by_user_id(current_user.id))%>
+                            <p><%=button_to emoji.face, tweet_user_emojitweet_path(tweet.id, current_user.id, tweet.emojitweets.find_by_user_id(current_user)), method: :delete%></p>
+                        <%end%>
+                    </li>
+                    <%end%>
+                <%end%>
+            </ul>
+        </div>
+        <div class='emojibox'>
+            <h4>Add yours!</h4>
+            <ul class='term-list'>
+                <%@emojis.each do |emoji|%>
+                <li class='emoji term-item'>
+                    <%=button_to emoji.face,{:controller => "emojitweets", :action => "create", :tweet_id => tweet.id, :emoji_id=>emoji.id, :user_id => current_user}%>
+                </li>
+                <%end%>
+            </ul>
+            <p class='length_icon'><%=pluralize tweet.emojitweets.size, "Emoji"%> </p>
+            <p class='twitteruser commentslink'><%=link_to 'Comments', tweet_comments_path(tweet), class:'commentslink'%></p>
+        </div>
+    </div>
+    <%end%>
+</div>

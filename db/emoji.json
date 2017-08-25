@@ -1,0 +1,358 @@
+[
+    {
+    "face": "😃"
+  , "description": "smiling face with open mouth"
+  , "aliases": [
+      "smiley"
+    ]
+  , "tags": [
+      "happy"
+    , "joy"
+    , "haha"
+    ]
+  }
+, {
+    "face": "😍"
+  , "description": "smiling face with heart-shaped eyes"
+  , "aliases": [
+      "heart_eyes"
+    ]
+  , "tags": [
+      "love"
+    , "crush"
+    ]
+  }
+, {
+    "face": "😘"
+  , "description": "face throwing a kiss"
+  , "aliases": [
+      "kissing_heart"
+    ]
+  , "tags": [
+      "flirt"
+    ]
+  }
+, {
+    "face": "😝"
+  , "description": "face with stuck-out tongue and tightly-closed eyes"
+  , "aliases": [
+      "stuck_out_tongue_closed_eyes"
+    ]
+  , "tags": [
+      "prank"
+    ]
+  }
+, {
+    "face": "😳"
+  , "description": "flushed face"
+  , "aliases": [
+      "flushed"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "😁"
+  , "description": "grinning face with smiling eyes"
+  , "aliases": [
+      "grin"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "😔"
+  , "description": "pensive face"
+  , "aliases": [
+      "pensive"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "😒"
+  , "description": "unamused face"
+  , "aliases": [
+      "unamused"
+    ]
+  , "tags": [
+      "meh"
+    ]
+  }
+, {
+    "face": "😣"
+  , "description": "persevering face"
+  , "aliases": [
+      "persevere"
+    ]
+  , "tags": [
+      "struggling"
+    ]
+  }
+, {
+    "face": "😢"
+  , "description": "crying face"
+  , "aliases": [
+      "cry"
+    ]
+  , "tags": [
+      "sad"
+    , "tear"
+    ]
+  }
+, {
+    "face": "😂"
+  , "description": "face with tears of joy"
+  , "aliases": [
+      "joy"
+    ]
+  , "tags": [
+      "tears"
+    ]
+  }
+, {
+    "face": "😭"
+  , "description": "loudly crying face"
+  , "aliases": [
+      "sob"
+    ]
+  , "tags": [
+      "sad"
+    , "cry"
+    , "bawling"
+    ]
+  }
+, {
+    "face": "😥"
+  , "description": "disappointed but relieved face"
+  , "aliases": [
+      "disappointed_relieved"
+    ]
+  , "tags": [
+      "phew"
+    , "sweat"
+    , "nervous"
+    ]
+  }
+, {
+    "face": "😩"
+  , "description": "weary face"
+  , "aliases": [
+      "weary"
+    ]
+  , "tags": [
+      "tired"
+    ]
+  }
+, {
+    "face": "😫"
+  , "description": "tired face"
+  , "aliases": [
+      "tired_face"
+    ]
+  , "tags": [
+      "upset"
+    , "whine"
+    ]
+  }
+, {
+    "face": "😱"
+  , "description": "face screaming in fear"
+  , "aliases": [
+      "scream"
+    ]
+  , "tags": [
+      "horror"
+    , "shocked"
+    ]
+  }
+, {
+    "face": "😠"
+  , "description": "angry face"
+  , "aliases": [
+      "angry"
+    ]
+  , "tags": [
+      "mad"
+    , "annoyed"
+    ]
+  }
+, {
+    "face": "😤"
+  , "description": "face with look of triumph"
+  , "aliases": [
+      "triumph"
+    ]
+  , "tags": [
+      "smug"
+    ]
+  }
+, {
+    "face": "😬"
+  , "description": "grimacing face"
+  , "aliases": [
+      "grimacing"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "😐"
+  , "description": "neutral face"
+  , "aliases": [
+      "neutral_face"
+    ]
+  , "tags": [
+      "meh"
+    ]
+  }
+, {
+    "face": "😕"
+  , "description": "confused face"
+  , "aliases": [
+      "confused"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "😯"
+  , "description": "hushed face"
+  , "aliases": [
+      "hushed"
+    ]
+  , "tags": [
+      "silence"
+    , "speechless"
+    ]
+  }
+, {
+    "face": "😇"
+  , "description": "smiling face with halo"
+  , "aliases": [
+      "innocent"
+    ]
+  , "tags": [
+      "angel"
+    ]
+  }
+, {
+    "face": "😏"
+  , "description": "smirking face"
+  , "aliases": [
+      "smirk"
+    ]
+  , "tags": [
+      "smug"
+    ]
+  }
+, {
+    "face": "😑"
+  , "description": "expressionless face"
+  , "aliases": [
+      "expressionless"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "💩"
+  , "description": "pile of poo"
+  , "aliases": [
+      "hankey"
+    , "poop"
+    , "shit"
+    ]
+  , "tags": [
+      "crap"
+    ]
+  }
+, {
+    "face": "🔥"
+  , "description": "fire"
+  , "aliases": [
+      "fire"
+    ]
+  , "tags": [
+      "burn"
+    ]
+  }
+, {
+    "face": "💦"
+  , "description": "splashing sweat symbol"
+  , "aliases": [
+      "sweat_drops"
+    ]
+  , "tags": [
+      "water"
+    , "workout"
+    ]
+  }
+, {
+    "face": "👍"
+  , "description": "thumbs up sign"
+  , "aliases": [
+      "+1"
+    , "thumbsup"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  }
+, {
+    "face": "👎"
+  , "description": "thumbs down sign"
+  , "aliases": [
+      "-1"
+    , "thumbsdown"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  }
+, {
+    "face": "👌"
+  , "description": "ok hand sign"
+  , "aliases": [
+      "ok_hand"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "face": "🙌"
+  , "description": "person raising both hands in celebration"
+  , "aliases": [
+      "raised_hands"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  }
+, {
+    "face": "👏"
+  , "description": "clapping hands sign"
+  , "aliases": [
+      "clap"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  }
+, {
+    "face": "💪"
+  , "description": "flexed biceps"
+  , "aliases": [
+      "muscle"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  }
+]

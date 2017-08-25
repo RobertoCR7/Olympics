@@ -1,0 +1,16 @@
+This is planning for tonight
+
+
+Tweet.all
+@tweet.each do |tweet|
+    element - tweet.status
+        @clickedtweet.find_each(tweet.id) do |tweet|
+            tweet.emoji.map do |emoji|
+            element - display emojis
+
+        element create method for clicked tweet table
+
+        sample idea - when taking emoji codes from clicked tweet array match them against class of counters with those displayed - Probs better
+
+
+This is what we should try to get working tonight
